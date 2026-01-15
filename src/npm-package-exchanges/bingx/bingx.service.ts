@@ -189,7 +189,7 @@ export class BingxService extends ExchangeService {
             await this.setDualPositionMode(false);
             await this.setLeverageAsync(commonId, coin, leverage);
 
-            const qty = (wallet.availableAmount * ((percentage * leverage) / 100)) / price;
+            const qty = (wallet.totalAmount * ((percentage * leverage) / 100)) / price;
 
             await this.openPositionAsync(commonId, coin, side, qty.toString());
         } catch (error) {
