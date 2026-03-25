@@ -4,7 +4,7 @@ import { SystemHeartbeat } from './system-heartbeat';
 import { FillCommonIdMiddleware } from './fill-common-id.middleware';
 import { FillMachineIdMiddleware } from './fill-machine-id.middleware';
 import { FillMachineNameMiddleware } from './fill-machine-name.middleware';
-import { hashTo6Upper } from './utils/utils';
+import { hashTo6Upper } from '../npm-package-utils/utils';
 
 export interface HeartbeatModuleOptions {
     applicationName: string;

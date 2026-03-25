@@ -8,7 +8,7 @@ import { HttpModule, HttpService } from '@nestjs/axios';
 import { HeartbeatModule } from './npm-package-candidate/heartbeat.module';
 import { SystemHeartbeat } from './npm-package-candidate/system-heartbeat';
 import { OctopusService } from './services/octopus.service';
-import { trimTrailingSlash, hashTo6Upper } from './npm-package-candidate/utils/utils';
+import { trimTrailingSlash, hashTo6Upper } from './npm-package-utils/utils';
 import { ExchangeModule } from './npm-package-exchanges/exchange.module';
 
 @Module({
